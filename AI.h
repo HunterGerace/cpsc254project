@@ -1,7 +1,6 @@
-#include <iostream>
-
-using namespace std;
-
-class intelligence {
-	void response (string command);
+#pragma once
+#include<string>
+class AI {
+	public:
+	void response (std::string command);
 };
