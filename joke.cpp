@@ -2,7 +2,11 @@
 using namespace std;
 void joke()
 	{
-	 srand(time(NULL));
+		char done;
+		srand(time(NULL));
+		do{
+		cout <<"\033[1J";
+                cout<<"\033[1;1H";
                 int num = rand() % 10 + 1;
                 if(num == 1) {
                         cout << "A guy shows up late for work. The boss yells, ‘You should’ve been here at 8.30!’" << endl;
@@ -20,7 +24,7 @@ void joke()
                         cout << "The son replies, 'My name is Paul.'" << endl <<endl;
                 }
 		if(num == 4)
-                        cout << "Did anyone notice that the '&' symbol looks like a dog dragging his butt across the floor?" << endl << endl;
+                        cout << "Did anyone notice that the '&' symbol looks like a dog dragging his butt across the floor?" << endl << 			endl;
                 if(num == 5)
                         cout << "If I ever go missing, you should put my picture on beer rather than milk bottles."
                                 <<" This way, my friends will find me faster." << endl <<endl;
@@ -39,4 +43,8 @@ void joke()
                         cout << "What's the worst thing about ancient orators?" << endl;
                         cout << "They tend to Babylon." << endl <<endl;
                 }
-}
+                
+                cout <<"Done laughing? Return?(Y/N)";
+                cin >>done;
+        }while(done=='N'||done=='n');        	
+}	
