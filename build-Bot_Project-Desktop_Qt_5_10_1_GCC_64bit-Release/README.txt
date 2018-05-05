@@ -17,7 +17,7 @@ Features planned but scrapped due to time constraints:
 +Graphical robot face/emote (something cute)
 +Noise generation
 
-The following open-source code was used to implement certain features:
+The following open-source code was reference to implement certain features:
 
 [Tic-Tac-Toe] https://github.com/Maxthecoder1/Cpp-tictactoe-with-2-player-and-vs-COMP/blob/master/tictactoevscompor2.cpp
 
